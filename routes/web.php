@@ -14,5 +14,45 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    return view('guests.welcome');
 });
+
+Route::get('/products', function () {
+    return view('guests.products');
+});
+
+Route::get('/news', function () {
+    return view('guests.news');
+});
+
+
+
+
+
+## Examples
+/*Route::get('/about', function () {
+
+    $data = [
+        'name' => 'Fabio',
+        'lastname' => 'Pacific'
+    ];
+
+
+
+    return view('guests.about', $data);
+});
+ */
+
+
+/* Route::get('/contacts', function () {
+
+
+
+    $name = 'Fabio';
+    $email = "fabio@example.com";
+
+
+    return view('contacts', compact('name', 'email'));
+});
+ */
