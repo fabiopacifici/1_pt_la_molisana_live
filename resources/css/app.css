@@ -10,6 +10,7 @@
 :root
 {
     --mol-ligher: white;
+    --mod-primary: #b3e5fc;
 }
 
 body
@@ -17,6 +18,10 @@ body
     font-family: 'Poppins', sans-serif;
 }
 
+
+img {
+    max-width: 100%;
+}
 .container
 {
     width: 70%;
@@ -55,6 +60,11 @@ header
             padding: 0.5rem;
             text-decoration: none;
             font-weight: 400;
+
+
+            &.active {
+                background-color: var(--mod-primary);
+            }
         }
     }
 
@@ -68,6 +78,20 @@ main
 {
     min-height: 60vh;
     background-image: url('../images/page-bg.jpg');
+
+
+
+    & #pasta {
+        & h1 {
+            padding: 1rem;
+        }
+        .card {
+            background-color: var(--mol-ligher);
+            text-align: center;
+            font-weight: 400px;
+        }
+    }
+
 }
 
 /* #endregion Main */
